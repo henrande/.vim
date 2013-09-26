@@ -11,7 +11,7 @@ git clone https://github.com/henrande/.vim.git ~/.vim
 ln -s ~/.vim/vimrc ~/.vimrc
 ```
 
-3) Clone Vundle
+3) Clone [Vundle](https://github.com/gmarik/vundle)
 
 ```
 git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
