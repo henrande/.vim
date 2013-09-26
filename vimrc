@@ -1,5 +1,28 @@
 set nocompatible
 
+filetype off " required!
+
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+" Let Vundle manage Vundle (required)
+Bundle 'gmarik/vundle'
+
+" My Bundles
+Bundle 'altercation/vim-colors-solarized'
+
+" Brief help
+" :BundleList          - list configured bundles
+" :BundleInstall(!)    - install(update) bundles
+" :BundleSearch(!) foo - search(or refresh cache first) for foo
+" :BundleClean(!)      - confirm(or auto-approve) removal of unused bundles
+"
+" see :h vundle for more details or wiki for FAQ
+" NOTE: comments after Bundle command are not allowed..
+
+" Enable file type based indentation (required)
+filetype plugin indent on
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Tabs and indentation
 """""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -9,8 +32,6 @@ set expandtab
 set shiftwidth=2
 " Number of spaces that tab counts for
 set tabstop=2
-" Enable file type based indentation
-filetype plugin indent on
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Highlighting and searching
