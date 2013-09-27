@@ -11,6 +11,7 @@ Bundle 'gmarik/vundle'
 " My Bundles
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'tpope/vim-fugitive'
+Bundle 'bling/vim-airline'
 
 " Brief help
 " :BundleList          - list configured bundles
@@ -23,6 +24,26 @@ Bundle 'tpope/vim-fugitive'
 
 " Enable file type based indentation (required)
 filetype plugin indent on
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Misc
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Show line numbers
+set number
+" Always show cursor position
+set ruler
+" Show (partial) command in last line of screen
+set showcmd
+" Completion mode
+set wildmode=longest,list,full
+" Command line completion shown above command line
+set wildmenu
+" Make backspace work like expected
+set backspace=indent,eol,start
+" Always display the status line
+set laststatus=2
+" Character encoding in vim
+set encoding=utf-8
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Tabs and indentation
@@ -62,19 +83,15 @@ endif
 inoremap jj <ESC>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Misc
+" Config for vim-airline
 """""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Show line numbers
-set number
-" Always show cursor position
-set ruler
-" Show (partial) command in last line of screen
-set showcmd
-" Completion mode
-set wildmode=longest,list,full
-" Command line completion shown above command line
-set wildmenu
-" Make backspace work like expected
-set backspace=indent,eol,start
-" Always display the status line
-set laststatus=2
+" No default mode indicator (use airline instead)
+set noshowmode
+
+if !exists('g:airline_symbols')
+  let g:airline_symbols = {}
+endif
+
+let g:airline_left_sep = '▶'
+let g:airline_right_sep = '◀'
+let g:airline_symbols.branch = '⎇ '
