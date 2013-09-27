@@ -10,6 +10,7 @@ Bundle 'gmarik/vundle'
 
 " My Bundles
 Bundle 'altercation/vim-colors-solarized'
+Bundle 'tpope/vim-fugitive'
 
 " Brief help
 " :BundleList          - list configured bundles
