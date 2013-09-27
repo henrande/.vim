@@ -76,3 +76,5 @@ set wildmode=longest,list,full
 set wildmenu
 " Make backspace work like expected
 set backspace=indent,eol,start
+" Always display the status line
+set laststatus=2
