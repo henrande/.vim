@@ -44,6 +44,10 @@ set backspace=indent,eol,start
 set laststatus=2
 " Character encoding in vim
 set encoding=utf-8
+" Allow buffer switching without saving
+set hidden
+" Show matching brackets/parenthesis
+set showmatch
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Tabs and indentation
@@ -95,3 +99,10 @@ endif
 let g:airline_left_sep = '▶'
 let g:airline_right_sep = '◀'
 let g:airline_symbols.branch = '⎇ '
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Local vimrc, if available
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""
+if filereadable(expand("~/.vimrc.local"))
+  source ~/.vimrc.local
+endif
