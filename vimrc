@@ -12,6 +12,7 @@ Bundle 'gmarik/vundle'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'tpope/vim-fugitive'
 Bundle 'bling/vim-airline'
+Bundle 'kien/ctrlp.vim'
 
 " Brief help
 " :BundleList          - list configured bundles
@@ -99,6 +100,11 @@ endif
 let g:airline_left_sep = '▶'
 let g:airline_right_sep = '◀'
 let g:airline_symbols.branch = '⎇ '
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Config for ctrlp
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:ctrlp_working_path_mode = 'ra'
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Local vimrc, if available
