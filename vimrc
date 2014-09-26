@@ -77,11 +77,16 @@ set ignorecase
 set smartcase
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Theme
+" GUI settings - theme and appearance
 """""""""""""""""""""""""""""""""""""""""""""""""""""""
 if has('gui_running')
   set background=light
   colorscheme solarized
+
+  " Hide toolbar (T) and scrollbars (r, L)
+  set guioptions-=T
+  set guioptions-=r
+  set guioptions-=L
 endif
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""
