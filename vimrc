@@ -92,6 +92,11 @@ endif
 """""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Key mappings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""
+let mapleader=","
+
+" Map <Leader>t to <C-]> (jump to tag) in normal mode
+nnoremap <Leader>t <C-]>
+
 " Map jj to <ESC> in insert mode
 inoremap jj <ESC>
 
