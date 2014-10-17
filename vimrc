@@ -92,7 +92,7 @@ endif
 """""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Key mappings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""
-let mapleader=","
+let mapleader="\<Space>"
 
 " Map <Leader>t to <C-]> (jump to tag) in normal mode
 nnoremap <Leader>t <C-]>
