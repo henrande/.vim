@@ -96,9 +96,12 @@ let mapleader="\<Space>"
 
 " Map <Leader>t to <C-]> (jump to tag) in normal mode
 nnoremap <Leader>t <C-]>
-
-" Map jj to <ESC> in insert mode
+nnoremap <Leader>c :noh<CR>
 inoremap jj <ESC>
+
+" Move up and down display lines (when lines wrap)
+nnoremap j gj
+nnoremap k gk
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Config for vim-airline
