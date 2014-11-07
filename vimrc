@@ -97,6 +97,7 @@ let mapleader="\<Space>"
 " Map <Leader>t to <C-]> (jump to tag) in normal mode
 nnoremap <Leader>t <C-]>
 nnoremap <Leader>c :noh<CR>
+nnoremap <Leader>w :w<CR>
 inoremap jj <ESC>
 
 " Move up and down display lines (when lines wrap)
