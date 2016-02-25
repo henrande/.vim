@@ -11,7 +11,8 @@ Bundle 'gmarik/vundle'
 " My Bundles
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'tpope/vim-fugitive'
-Bundle 'bling/vim-airline'
+Bundle 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 Bundle 'kien/ctrlp.vim'
 Bundle 'Shougo/neocomplcache.vim'
 
