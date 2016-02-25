@@ -127,7 +127,7 @@ let g:ctrlp_working_path_mode = 'ra'
 """""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Config for supertab
 """""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Navigate the completion menu from top to bottome
+" Navigate the completion menu from top to bottom
 let g:SuperTabDefaultCompletionType = "<c-n>"
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""
