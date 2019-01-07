@@ -13,8 +13,9 @@ Plugin 'altercation/vim-colors-solarized'
 Plugin 'tpope/vim-fugitive'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
-Plugin 'kien/ctrlp.vim'
 Plugin 'ervandew/supertab'
+Plugin 'junegunn/fzf'
+Plugin 'junegunn/fzf.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -105,6 +106,9 @@ nnoremap <Leader>c :noh<CR>
 nnoremap <Leader>w :w<CR>
 inoremap jj <ESC>
 
+" fzf fuzzy finder
+nnoremap <Leader>f :Files<CR>
+
 " Move up and down display lines (when lines wrap)
 nnoremap j gj
 nnoremap k gk
@@ -122,11 +126,6 @@ endif
 let g:airline_left_sep = '▶'
 let g:airline_right_sep = '◀'
 let g:airline_symbols.branch = '⎇ '
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Config for ctrlp
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:ctrlp_working_path_mode = 'ra'
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Config for supertab
