@@ -109,6 +109,7 @@ inoremap jj <ESC>
 " fzf fuzzy finder
 nnoremap <Leader>f :Files<CR>
 nnoremap <Leader>gf :GFiles<CR>
+nnoremap <Leader>b :Buffers<CR>
 
 " Move up and down display lines (when lines wrap)
 nnoremap j gj
